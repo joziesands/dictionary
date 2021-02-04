@@ -13,8 +13,22 @@
 </head>
 
 <body>
-    <text></text>
-    <button>Go</button>
+  <div class="container">
+    <div id="defDisplay">
+      <h1 id="headword" length="20"></h1>
+      <p id="definition"></p>
+    </div>
+
+    <div id="camDisplay">
+      <canvas id="canvas" width="640" height="480"></canvas> 
+      <video id="video" width="640" height="480" autoplay></video>
+    </div>
+    <div class="controls">
+      <button id="toggle" onClick="toggle()">Camera</button>
+    </div>
+  </div>
+
+
   <script src="js/scripts.js"></script>
 </body>
 </html>
